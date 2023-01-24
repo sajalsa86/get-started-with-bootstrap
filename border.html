@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Border</title>
+    <!-- Bootstrap css -->
+    <!-- offline css -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- online css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 30px;
+
+        }
+
+        .my-style {
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            color: chocolate;
+            text-shadow: 2px 2px 2px aqua;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Get started with Bootstrap</h1>
+
+    <div class="container">
+        <div class="my-style bg-primary-subtle border border-5 border-danger">Border</div>
+        <div class="my-style bg-info border-top border-5 border-success">Border top-</div>
+        <div class="my-style bg-danger-subtle border-end border-5 border-info">Border end</div>
+        <div class="my-style bg-success border-bottom border-5 border-danger">Border Bottom</div>
+        <div class="my-style bg-danger border-start border-5 border-primary">Border start</div>
+
+    </div>
+
+    <div class="container">
+        <div class="my-style bg-primary-subtle border border-0">Border-0</div>
+        <div class="my-style bg-info border border-top-0 border-5 border-success">Border top-0</div>
+        <div class="my-style bg-danger-subtle border border-end-0 border-5 border-info">Border end-0</div>
+        <div class="my-style bg-success border border-bottom-0 border-5 border-danger">Border Bottom-0</div>
+        <div class="my-style bg-danger border border-start-0 border-5 border-primary">Border start-0</div>
+
+    </div>
+
+    <h1>border color</h1>
+    <div class="container">
+        <div class="my-style border border-5 border-primary">.border-primary</div>
+        <div class="my-style border border-5 border-primary-subtle">.border-primary-subtle</div>
+        <div class="my-style border border-5 border-secondary">.border-secondary</div>
+        <div class="my-style border border-5 border-secondary-subtle">.border-secondary-subtle</div>
+        <div class="my-style border border-5 border-success">.border-success</div>
+        <div class="my-style border border-5 border-success-subtle">.border-success-subtle</div>
+        <div class="my-style border border-5 border-danger">.border-danger</div>
+        <div class="my-style border border-5 border-danger-subtle">.border-danger-subtle</div>
+        <div class="my-style border border-5 border-warning">.border-warning</div>
+        <div class="my-style border border-5 border-warning-subtle">.border-warning-subtle</div>
+        <div class="my-style border border-5 border-info">.border-info</div>
+        <div class="my-style border border-5 border-light">.border-light</div>
+        <div class="my-style border border-5 border-light-subtle">.border-light-subtle</div>
+        <div class="my-style border border-5 border-dark">.border-dark</div>
+        <div class="my-style border border-5 border-dark-subtle">.border-dark-subtle</div>
+        <div class="my-style border border-5 border-white">.border-white</div>
+    </div>
+
+    <div class="mb-4">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control border-success" id="exampleFormControlInput1"
+            placeholder="name@example.com">
+    </div>
+
+    <div class="h4 pb-2 mb-4 text-danger border-bottom border-4 border-danger">
+        Dangerous heading
+    </div>
+
+    <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+        Changing border color and width
+    </div>
+
+    <div class="border border-success p-2 mb-2">This is default success border</div>
+    <div class="border border-danger p-2 mb-2 border-opacity-75">This is 75% opacity danger border</div>
+    <div class="border border-warning p-2 mb-2 border-opacity-50">This is 50% opacity warning border</div>
+    <div class="border border-dark p-2 mb-2 border-opacity-25">This is 25% opacity dark border</div>
+    <div class="border border-primary p-2 border-opacity-10">This is 10% opacity primary border</div>
+
+    <h1>Border Radius</h1>
+    <div class="container">
+        <div class="my-style border border-5 border-warning rounded">.rounded</div>
+        <div class="my-style border border-5 border-danger rounded-top">.rounded-top</div>
+        <div class="my-style border border-5 border-info rounded-end">.rounded-end</div>
+        <div class="my-style border border-5 border-primary rounded-bottom">.rounded-bottom</div>
+        <div class="my-style border border-5 border-success rounded-start">.rounded-start</div>
+        <div class="my-style border border-5 border-light rounded-circle">.rounded-circle</div>
+        <div class="my-style border border-5 border-dark rounded-pill">.rounded-pill</div>
+
+    </div>
+
+
+    <h1>Border Radius size</h1>
+    <div class="container">
+        <div class="my-style border border-warning rounded-0">.rounded-0</div>
+        <div class="my-style border border-danger rounded-1">.rounded-1</div>
+        <div class="my-style border border-info rounded-2">.rounded-2</div>
+        <div class="my-style border border-primary rounded-3">.rounded-3</div>
+        <div class="my-style border border-success rounded-4">.rounded-4</div>
+        <div class="my-style border border-danger rounded-5">.rounded-5</div>
+    </div>
+    <div class="container">
+        <div class="my-style border border-warning rounded-bottom-1">.rounded-bottom-1</div>
+        <div class="my-style border border-danger rounded-start-2">.rounded-start-2</div>
+        <div class="my-style border border-info rounded-end-circle">.rounded-end-circle</div>
+        <div class="my-style border border-primary rounded-start-pill">.rounded-start-pill</div>
+        <div class="my-style border border-danger rounded-5 rounded-top-0">rounded-5</div>
+    </div>
+
+    <!-- Bootstrap js -->
+    <!-- offline js -->
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <!-- online js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
