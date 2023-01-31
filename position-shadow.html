@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .my-style {
+            width: 50px;
+            height: 50px;
+            border: 3px solid azure;
+            background-color: darkgreen;
+            border-radius: 50%;
+            text-align: center;
+            color: azure;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="position-relative m-5 mx-auto bg-success-subtle"
+        style="width: 600px; height: 500px; border: 2px solid red;">
+        <div class="my-style position-absolute top-0 start-0">1</div>
+        <div class="my-style position-absolute top-0 end-0">2</div>
+        <!-- <div style="position: absolute; top: 50%; right: 50%;" class="my-style">3</div> -->
+        <div class="my-style position-absolute top-50 start-50">3</div>
+        <div class="my-style position-absolute bottom-50 end-50">4</div>
+        <div class="my-style position-absolute bottom-0 start-0">5</div>
+        <div class="my-style position-absolute bottom-0 end-0">6</div>
+    </div>
+
+    <div class="position-relative m-5 mx-auto bg-success-subtle"
+        style="width: 600px; height: 500px; border: 2px solid red;">
+        <div class="my-style position-absolute top-0 start-0 translate-middle">1</div>
+        <div class="my-style position-absolute top-0 start-50 translate-middle">2</div>
+        <div class="my-style position-absolute top-0 start-100 translate-middle">3</div>
+        <div class="my-style position-absolute top-50 start-0 translate-middle">4</div>
+        <div class="my-style position-absolute top-50 start-50 translate-middle">5</div>
+        <div class="my-style position-absolute top-50 start-100 translate-middle">6</div>
+        <div class="my-style position-absolute top-100 start-0 translate-middle">7</div>
+        <div class="my-style position-absolute top-100 start-50 translate-middle">8</div>
+        <div class="my-style position-absolute top-100 start-100 translate-middle">9</div>
+    </div>
+
+
+    <div style="height: 150px;" class="w-25 mx-auto border border-3 border-danger mb-5">
+        <button type="button" class="btn btn-primary position-relative m-2">
+            Mails
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99
+                <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+
+        <button type="button" class="btn btn-primary position-relative m-2">
+            Alerts
+            <span
+                class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span
+                    class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+    </div>
+    <br>
+    <div class="position-relative m-4">
+        <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50" aria-valuemin="0"
+            aria-valuemax="100" style="height: 1px;">
+            <div class="progress-bar" style="width: 50%"></div>
+        </div>
+        <button type="button"
+            class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill"
+            style="width: 2rem; height:2rem;">1</button>
+        <button type="button"
+            class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill"
+            style="width: 2rem; height:2rem;">2</button>
+        <button type="button"
+            class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill"
+            style="width: 2rem; height:2rem;">3</button>
+    </div>
+
+    <div class="shadow-none p-3 mb-5 bg-body-tertiary rounded">No shadow</div>
+    <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded">Small shadow</div>
+    <div class="shadow p-3 mb-5 bg-body-tertiary rounded">Regular shadow</div>
+    <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Larger shadow</div>
+    <div class="shadow-lg"
+        style="width: 300px; height: 300px; border: 1px solid hotpink; background-color: bisque; margin: 0 auto;">
+    </div>
+    <div class="badge bg-primary text-wrap" style="width: 6rem;">
+        This text ggggggggggggggshould wrap.
+    </div>
+    <p class="text-lowercase">Lowercased text.</p>
+    <p class="text-uppercase">Uppercased text.</p>
+    <p class="text-capitalize">CapiTaliZed text.</p>
+</body>
+
+</html>

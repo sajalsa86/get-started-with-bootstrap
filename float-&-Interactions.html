@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h3>float</h3>
+    <div class="float-start"><code>start on all viewport sizes</code> </div><br>
+    <div class="float-end">Float end on all viewport sizes</div><br>
+    <div class="float-none">Don't float on all viewport sizes</div>
+
+    <div class="float-sm-start">Float start on viewports sized SM (small) or wider</div><br>
+    <div class="float-md-start">Float start on viewports sized MD (medium) or wider</div><br>
+    <div class="float-lg-start">Float start on viewports sized LG (large) or wider</div><br>
+    <div class="float-xl-start">Float start on viewports sized XL (extra-large) or wider</div><br>
+    <h2>Interactions</h2>
+
+    <p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
+    <p class="user-select-auto">This paragraph has default select behavior.</p>
+    <p class="user-select-none">This paragraph will not be selectable when clicked by the user.</p>
+
+    <div class="user-select-none">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolore ullam facere debitis temporibus nobis
+            quas. Incidunt repellat rerum, alias fugit ad quod totam ex esse eligendi, harum iste repudiandae.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, voluptatibus dicta architecto, error illum
+            eligendi incidunt facere ab aliquid temporibus laudantium totam hic eos. Est, optio. Laboriosam ab ut vel.
+        </p>
+    </div>
+    <h2>Pointer events
+    </h2>
+    <p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">This link</a> can not be clicked.</p>
+    <p><a href="#" class="pe-auto">This link</a> can be clicked (this is default behavior).</p>
+    <p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">This link</a> can not be clicked because the
+        <code>pointer-events</code> property is inherited from its parent. However, <a href="#" class="pe-auto">this
+            link</a> has a <code>pe-auto</code> class and can be clicked.
+    </p>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
