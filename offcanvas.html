@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- Bootstrap css -->
+    <!-- offline css -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- online css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container bg-info-subtle text-center mt-5">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling">Enable body scrolling</button>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <p>Try scrolling the rest of the page to see this option in action.</p>
+                    <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Social List</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">Facebook</a></li>
+                        <li><a class="dropdown-item" href="">Facebook</a></li>
+                        <li><a class="dropdown-item" href="">Facebook</a></li>
+                        <li><a class="dropdown-item" href="">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- first Offcanvas end -->
+    <div class="container bg-info text-center">
+        <h1 class="display-1">Offcanvas</h1>
+        <p class="fs-2">Build hidden sidebars into your project for navigation, shopping carts, and more with a few
+            classes and our
+            JavaScript
+            plugin.
+        </p>
+        <!-- Offcanvas----------------------------------- -->
+    </div>
+    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#sajal" role="button" aria-controls="sajal">
+        Link with href
+    </a>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#sajal"
+        aria-controls="sajal">
+        Button with data-bs-target
+    </button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sajal" aria-labelledby="sajal">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sajal">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists,
+                etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="bg-info"><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offcanvas off----------------------------------- -->
+
+
+    <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">Toggle offcanvas</button>
+
+    <div class="alert alert-info d-none d-lg-block">Resize your browser to show the responsive offcanvas toggle.</div>
+
+    <div class="offcanvas-lg offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="offcanvasResponsive"
+        aria-labelledby="offcanvasResponsiveLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="mb-0">This is content within an <code>.offcanvas-lg</code>.</p>
+        </div>
+    </div>
+    <!-- Bootstrap js -->
+    <!-- offline js -->
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <!-- online js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
